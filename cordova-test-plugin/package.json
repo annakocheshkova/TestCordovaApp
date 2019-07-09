@@ -1,0 +1,13 @@
+{
+  "name": "cordova-test-plugin",
+  "version": "0.1.1",
+  "description": "Description",
+  "license": "MIT",
+  "author": "Anna",
+  "cordova": {
+    "id": "cordova-test-plugin",
+    "platforms": [
+      "ios"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-test-plugin" version="0.1.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>Test plugin</name>
+    <description>
+        Description
+    </description>
+    <license>MIT</license>
+
+    <engine name="cordova" version=">=6.4.0" />
+    <engine name="cordova-ios" version="5.0.0" />
+
+    <js-module name="TestPlugin" src="www/TestPlugin.js">
+        <clobbers target="TestPlugin" />
+    </js-module>
+
+    <platform name="ios">
+        <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="Alarmofire" spec="~> 4.8.0" />
+            </pods>
+        </podspec>
+    </platform>
+</plugin>
